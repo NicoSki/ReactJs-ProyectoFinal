@@ -1,0 +1,10 @@
+div.productos{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+div.card{
+    margin-bottom: 3%;
+    text-align: center;
+}

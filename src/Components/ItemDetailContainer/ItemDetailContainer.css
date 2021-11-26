@@ -1,0 +1,8 @@
+div.info{
+    display: flex;
+    justify-content: center;
+}
+
+div.card{
+    text-align: center;
+}

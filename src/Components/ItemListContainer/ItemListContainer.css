@@ -1,0 +1,12 @@
+
+/*Agrego algunos estilos de los items*/
+
+.atom{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(39, 199, 39);
+}
+
+.atom svg{
+    cursor: pointer;
+}
