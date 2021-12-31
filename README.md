@@ -33,3 +33,5 @@ Los fines de esta app no fueron los detalles para el consumidor sino que sea efi
 Espero que cumpla tus expectativas....
 
 ¿Desde el lado del consumidor, que me recomendarias para mejorar?
+
+Acá te dejo el link de mi app :  https://focused-jang-77a245.netlify.app/
