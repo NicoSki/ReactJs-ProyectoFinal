@@ -1,70 +1,35 @@
-# Getting Started with Create React App
+# Rick y Morty Burgers
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+## Objetivos del Proyecto:
 
-### `npm start`
+El proyecto se baso en la creacion de una app donde un usuario pueda realizar su pedido, seleccionando tanto una hamburguesa como sus papas y su respectiva bebidas
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Los cuatro componentes principales que componen la app son:
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+- Hamburguesas
+- Papas
+- Bebidas
+- Carrito de Compras
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```
+Los fines de esta app no fueron los detalles para el consumidor sino que sea eficiente la parte logica y funcional de la misma
+```
 
-### `npm run build`
+## Librerias Involucradas:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+| LIBRERIA | INFORMACION |
+| ------ | ------ |
+| Bootstrap | Estilos para todo tipo de etiquetas fueron basados en los efectos de esta poderosa libreria |
+| react-router-dom | Gracias a esta libreria, la navegacion en las distintas secciones de la app se tornaron mas dinamicas, tanto a la hora de navegar como a la de setear codigo |
+| Firebase | Contando con esta nueva libreria, la cantidad de almacenamiento y el orden de tus datos ya no son temas de preocupacion|
+| SweetAlert | Con esta ultima libreria vas a amar el uso de los alerts, si sos nuevo en el mundo de la programacion, seguramente vas a encontrar a los alerts muy aburridos y sin filtros, pero con esta libreria, le vas a querer poner alertas hasta donde no los necesitas, Tenes que probarla! |
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## ¿Que te parecio la app?
 
-### `npm run eject`
+Espero que cumpla tus expectativas....
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+¿Desde el lado del consumidor, que me recomendarias para mejorar?
