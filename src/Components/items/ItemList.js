@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import itemsPromise from "../ArrayDeInfo/Item"
+import getFirestore from '../FireBase/Firebase';
 import { Link } from "react-router-dom";
-import "./ItemList.css"
+import "./ItemList.css";
 
 
 
@@ -11,7 +11,10 @@ const ItemList = () => {
     const [productos, setProductos] = useState([])
 
     useEffect(() => {
-        itemsPromise.then((res) => { setProductos(res) })
+        const db = getFirestore()
+        const dbQuery = db.collection("productos")
+        dbQuery.get()
+            .then(data => setProductos(data.docs.map(item => ({ id: item.id, ...item.data() }))))
     }, [])
 
 
@@ -22,9 +25,9 @@ const ItemList = () => {
                     <div className="card" style={{ width: "18rem" }} key={items.id}>
                         <img src={items.img} className="card-img-top" alt="img" />
                         <div className="card-body">
-                            <h5 className="card-title">{items.titulo}</h5>
+                            <h5 className="card-title">{items.nombre}</h5>
                             <p className="card-text">{items.categoria}</p>
-                            <Link to="/detalle">
+                            <Link to={`/detalle/${items.id}`}>
                                 <button className="btn btn-success">Ver más</button>
                             </Link>
                         </div>
@@ -35,4 +38,4 @@ const ItemList = () => {
     );
 }
 
-export default ItemList
+export default ItemList;

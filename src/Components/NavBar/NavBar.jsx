@@ -2,6 +2,7 @@ import React from 'react'
 import "./NavBar.css";
 import { Link } from 'react-router-dom';
 
+
 const NavBar = () => {
     return (
         <div>
@@ -21,6 +22,14 @@ const NavBar = () => {
 
                 <Link to="/">
                     <li><button className="btn btn-dark">Home</button></li>
+                </Link>
+
+                <Link to="/carrito">
+                    <li>
+                        <button type="button" className="btn btn-dark position-relative">
+                            🛒
+                        </button>
+                    </li>
                 </Link>
             </ul>
         </div>

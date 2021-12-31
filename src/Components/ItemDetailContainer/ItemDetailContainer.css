@@ -6,3 +6,7 @@ div.info{
 div.card{
     text-align: center;
 }
+
+div.card h5{
+    font-size: 40px;
+}

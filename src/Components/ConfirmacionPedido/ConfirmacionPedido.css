@@ -1,0 +1,11 @@
+div.pedido h1{
+    background-image: url("https://miro.medium.com/max/1400/1*bP_X1cPndSA60gxFx2w7fw.png");
+    color: black;
+    padding-top: 3%;
+}
+
+button.pedido{
+    position: relative;
+    right: -40%;
+    margin-top: 2%;
+}

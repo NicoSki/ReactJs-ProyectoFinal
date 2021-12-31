@@ -1,0 +1,30 @@
+div.carrito{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding-bottom: 5%;
+}
+
+div.carrito img{
+    width: 50%;
+}
+
+
+div.carrito h1, h3, h4{
+    background: none;
+    text-transform: uppercase;
+}
+
+ h4, h2{
+text-align: center;
+color: rgb(0, 238, 255);
+font-size: 50px;
+text-decoration: underline dotted;
+}
+
+h6{
+    color: rgb(0, 238, 255);
+    text-align: center;
+}
