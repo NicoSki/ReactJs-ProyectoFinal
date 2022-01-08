@@ -22,10 +22,10 @@ Los fines de esta app no fueron los detalles para el consumidor sino que sea efi
 
 | LIBRERIA | INFORMACION |
 | ------ | ------ |
-| Bootstrap | Estilos para todo tipo de etiquetas fueron basados en los efectos de esta poderosa libreria |
-| react-router-dom | Gracias a esta libreria, la navegacion en las distintas secciones de la app se tornaron mas dinamicas, tanto a la hora de navegar como a la de setear codigo |
-| Firebase | Contando con esta nueva libreria, la cantidad de almacenamiento y el orden de tus datos ya no son temas de preocupacion|
-| SweetAlert | Con esta ultima libreria vas a amar el uso de los alerts, si sos nuevo en el mundo de la programacion, seguramente vas a encontrar a los alerts muy aburridos y sin filtros, pero con esta libreria, le vas a querer poner alertas hasta donde no los necesitas, Tenes que probarla! |
+| Bootstrap V 5.1.3 | Estilos para todo tipo de etiquetas fueron basados en los efectos de esta poderosa libreria |
+| react-router-dom V 6.0.2| Gracias a esta libreria, la navegacion en las distintas secciones de la app se tornaron mas dinamicas, tanto a la hora de navegar como a la de setear codigo |
+| Firebase V 8.9.1| Contando con esta nueva libreria, la cantidad de almacenamiento y el orden de tus datos ya no son temas de preocupacion|
+| SweetAlert V 2.1.2| Con esta ultima libreria vas a amar el uso de los alerts, si sos nuevo en el mundo de la programacion, seguramente vas a encontrar a los alerts muy aburridos y sin filtros, pero con esta libreria, le vas a querer poner alertas hasta donde no los necesitas, Tenes que probarla! |
 
 
 ## ¿Que te parecio la app?
