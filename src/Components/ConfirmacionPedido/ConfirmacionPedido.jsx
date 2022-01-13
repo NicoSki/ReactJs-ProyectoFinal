@@ -1,5 +1,5 @@
-import React, { useContext, useState } from 'react';
-import { CartContext } from '../CartContext/CartContext';
+import React, { useState } from 'react';
+import { useCartContext } from '../CartContext/CartContext';
 import "./ConfirmacionPedido.css";
 import swal from 'sweetalert';
 import getFirestore from "../FireBase/Firebase";
@@ -8,7 +8,7 @@ import getFirestore from "../FireBase/Firebase";
 
 const ConfirmacionPedido = () => {
 
-    const [pedido, setPedido] = useContext(CartContext)
+    const {carrito} = useCartContext()
     const [error, setError] = useState("")
     const [mostrarError, setMostrarError] = useState(false)
 
@@ -76,12 +76,11 @@ const ConfirmacionPedido = () => {
 
             let fin = 0
 
-            let aPagar = pedido.map((item) => (fin = fin + (item.precio * item.cantidad)))
-            let particular = pedido.map((e) => ({nombre: e.nombre,categoria: e.categoria, cantidad: e.cantidad,precio: (e.precio * e.cantidad)}))
+            let aPagar = carrito.map((item) => (fin = fin + (item.precio * item.cantidad)))
+            let particular = carrito.map((e) => ({nombre: e.nombre,categoria: e.categoria, cantidad: e.cantidad,precio: (e.precio * e.cantidad)}))
            comanda.total = aPagar[aPagar.length - 1]
-           comanda.pedido = particular 
+           comanda.carrito = particular 
            setMostrarError(false)
-
             
            const db = getFirestore()
            db.collection("pedidos").add(comanda)
@@ -90,6 +89,7 @@ const ConfirmacionPedido = () => {
             text: `No olvides tu numero de orden: ${res.id}`,
             icon: "success",
           }))
+        
     }
 
     return (

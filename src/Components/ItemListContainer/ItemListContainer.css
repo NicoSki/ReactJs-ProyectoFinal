@@ -1,12 +1,15 @@
-
-/*Agrego algunos estilos de los items*/
-
-.atom{
+div.productos{
     display: flex;
-    justify-content: space-between;
-    background-color: rgb(39, 199, 39);
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
-.atom svg{
-    cursor: pointer;
+div.card{
+    margin-bottom: 3%;
+    text-align: center;
+}
+
+h1.cargando{
+    background-image: none;
 }

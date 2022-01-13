@@ -28,3 +28,9 @@ h6{
     color: rgb(0, 238, 255);
     text-align: center;
 }
+
+.botones{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}

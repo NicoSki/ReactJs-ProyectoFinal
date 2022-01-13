@@ -1,5 +1,5 @@
-import React, { useEffect, useContext, useState } from 'react';
-import { CartContext } from './CartContext';
+import React, { useEffect, useState } from 'react';
+import { useCartContext } from './CartContext';
 import "./Carrito.css";
 import { Link } from "react-router-dom";
 
@@ -10,12 +10,9 @@ import { Link } from "react-router-dom";
 
 const Carrito = () => {
 
-    const [carrito, setCarrito] = useContext(CartContext)
-
-
+    const { carrito, vaciarCarrito, eliminarProducto } = useCartContext()
 
     let [total, setTotal] = useState(0);
-
 
 
     useEffect(() => {
@@ -26,36 +23,45 @@ const Carrito = () => {
         setTotal(final)
     }, [carrito])
 
-    
 
-    const vaciar = () => {
-        setCarrito([])
-    }
+    //solucionar problema del producto
+    // function eliminarProducto(e) {
+    //     const id = e.target.id
+    //     console.log(id);
+    //     // carrito.filter((carritoId) => {
+    //     //     console.log(carritoId);
+    //     //     return carritoId === id
+    //     // })
+    // }
+
+
 
     const Confirmar = () => {
         return carrito;
-     }
+    }
 
 
     return (
         <>
             <h4>Carrito</h4>
-            <button className='btn btn-danger' onClick={() => vaciar()}>Reiniciar Pedido</button>
-            {
-                carrito.length !== 0 ?  <h6>Productos seleccionados: {carrito.length}</h6> :  null
-            }
-           
+            <section className='botones'>
+                <Link to="/">
+                    <button className='btn btn-primary'>Volver a los productos</button>
+                </Link>
+                <button className='btn btn-danger' onClick={() => vaciarCarrito()}>Reiniciar Pedido</button>
+            </section>
+
             {
                 carrito.map((item) => (
                     <div key={item.id} className="carrito">
                         <h1>{item.nombre}</h1>
-                        <h3>{item.categoria}</h3>
                         <img src={item.img} alt="img" />
                         <p>Precio Unitario: $ {item.precio}</p>
+
                         {
                             item.cantidad === 1 ? <p>Cantidad Seleccionada: {item.cantidad} Unidad</p> : <p>Cantidad Seleccionada: {item.cantidad} Unidades</p>
                         }
-                        
+                        <button className='btn btn-danger' type="button" onClick={()=>eliminarProducto(item.id)}>🗑</button>
                     </div>
                 ))
             }
@@ -66,13 +72,13 @@ const Carrito = () => {
 
             {
                 carrito.length !== 0 ?
-                
-                <Link to="/confirmacionPedido">
-                 <button className="btn btn-primary" onClick={() => Confirmar()}>Finalizar Pedido</button>
-                </Link> 
-                 : <button className="btn btn-primary disabled">Confirmar Pedido</button> 
+
+                    <Link to="/confirmacionPedido">
+                        <button className="btn btn-primary" onClick={() => Confirmar()}>Finalizar Pedido</button>
+                    </Link>
+                    : <button className="btn btn-primary disabled">Confirmar Pedido</button>
             }
-           
+
         </>
     )
 }

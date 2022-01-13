@@ -1,22 +1,25 @@
 import React from 'react'
 import "./NavBar.css";
 import { Link } from 'react-router-dom';
+import CartWidGet from '../CartContext/CartWidGet';
+
 
 
 const NavBar = () => {
+
     return (
         <div>
             <ul className="menu">
 
-                <Link to="/hamburguesas">
+                <Link to="/categorias/hamburguesa">
                     <li><button className="btn btn-dark">Hamburguesas</button></li>
                 </Link>
 
-                <Link to="/papas">
+                <Link to="/categorias/papas">
                     <li><button className="btn btn-dark">Papas</button></li>
                 </Link>
 
-                <Link to="/bebidas">
+                <Link to="/categorias/bebidas">
                     <li><button className="btn btn-dark">Bebidas</button></li>
                 </Link>
 
@@ -26,9 +29,7 @@ const NavBar = () => {
 
                 <Link to="/carrito">
                     <li>
-                        <button type="button" className="btn btn-dark position-relative">
-                            🛒
-                        </button>
+                        <CartWidGet />
                     </li>
                 </Link>
             </ul>
