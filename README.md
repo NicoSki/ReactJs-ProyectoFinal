@@ -34,4 +34,4 @@ Espero que cumpla tus expectativas....
 
 ¿Desde el lado del consumidor, que me recomendarias para mejorar?
 
-Acá te dejo el link de mi app :  https://focused-jang-77a245.netlify.app/
+Acá te dejo el link de mi app :  https://goofy-saha-4fce88.netlify.app/
